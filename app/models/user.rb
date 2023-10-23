@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
   def get_last_pixel_color
     # guart close, return white if no pixels
-    return "white" if self.pixels.empty?
+    return "#ffffff" if self.pixels.empty?
 
     self.pixels.last.color
   end
