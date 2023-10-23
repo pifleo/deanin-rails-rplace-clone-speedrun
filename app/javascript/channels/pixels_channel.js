@@ -10,6 +10,9 @@ consumer.subscriptions.create("PixelsChannel", {
   },
 
   received(data) {
+    console.log(data);
     // Called when there's incoming data on the websocket for this channel
+    const event = new CustomEvent("pixelReceived", { detail: data });
+    document.dispatchEvent(event);
   }
 });

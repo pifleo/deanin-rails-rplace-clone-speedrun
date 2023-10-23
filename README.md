@@ -1,4 +1,9 @@
-# Deanin Ruby On Rails r/place clone speedrun (in Docker env)
+# Deanin Ruby On Rails r/place clone speedrun
+
+Youtube: Realtime r/place Clone Speedrun in Ruby on Rails 7
+https://www.youtube.com/watch?v=aZq_pU2dysk
+
+## Build the app
 
 Actioncable + Stimulus
 
@@ -15,30 +20,11 @@ rails g controller pixels
 rails db:migrate
 # Edit db/seeds.rb
 rails db:seed
-rails s
 ```
 
-# README
+## Launch the app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+rails s
+# then open two browsers and log at user1@example.com and user2@example.com to see the change live
+```

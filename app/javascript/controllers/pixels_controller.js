@@ -23,6 +23,9 @@ export default class extends Controller {
     this.resizeCanvas();
     this.loadPixels();
     this.loadColor();
+    document.addEventListener("pixelReceived", (event) => 
+      this.drawPixel(event.detail)
+    );
   }
 
   resizeCanvas() {
